@@ -30,7 +30,7 @@ public class AsyncTask {
         Thread.sleep(2000);
         long end = System.currentTimeMillis();
         System.out.println("task2任务耗时"+(end-start)+"ms");
-        return new AsyncResult<>(true);
+        return new AsyncResult<>(false);
 
     }
 

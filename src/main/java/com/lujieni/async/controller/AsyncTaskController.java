@@ -30,6 +30,8 @@ public class AsyncTaskController {
         Future<Boolean> f2 = asyncTask.task2();//异步方法
         while (!f1.isDone() || !f2.isDone()){
             if(f1.isDone() && f2.isDone()){
+                System.out.println("f1:"+f1.get());
+                System.out.println("f2:"+f2.get());
                 break;
             }
         }
